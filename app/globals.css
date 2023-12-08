@@ -25,3 +25,17 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer components {
+  .base-main {
+    @apply flex min-h-screen flex-col items-center p-10 gap-4;
+  }
+
+  .base-header {
+    @apply text-4xl font-bold;
+  }
+
+  .base-link {
+    @apply underline
+  }
+}

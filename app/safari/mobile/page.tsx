@@ -1,9 +1,12 @@
 import Link from "next/link"
 
-export default function IOS() {
+export default function Mobile() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      Safari iOS
+    <main className="base-main">
+      <header className="base-header">Safari iOS</header>
+
+      <Link href="/safari/mobile/fixed-bottom" className="base-link">Fixed Bottom</Link>
+      <Link href="/safari/mobile/detect-osk" className="base-link">Detect OSK</Link>
     </main>
   )
 }

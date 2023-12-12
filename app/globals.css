@@ -24,18 +24,31 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  padding: 0;
+  margin: 0;
 }
 
 @layer components {
   .base-main {
     @apply flex min-h-screen flex-col items-center p-10 gap-4;
   }
-
   .base-header {
     @apply text-4xl font-bold;
   }
-
   .base-link {
     @apply underline
+  }
+
+  .page-container {
+    @apply flex h-screen flex-col border;
+  }
+  .page-body-container {
+    @apply overflow-y-scroll;
+  }
+  .page-body {
+    @apply h-[2000px];
+  }
+  .page-footer {
+    @apply sticky bottom-0 w-full px-4 py-2 border;
   }
 }

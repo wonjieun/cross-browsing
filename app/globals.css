@@ -38,17 +38,4 @@ body {
   .base-link {
     @apply underline
   }
-
-  .page-container {
-    @apply flex h-screen flex-col border;
-  }
-  .page-body-container {
-    @apply overflow-y-scroll;
-  }
-  .page-body {
-    @apply h-[2000px];
-  }
-  .page-footer {
-    @apply sticky bottom-0 w-full px-4 py-2 border;
-  }
 }
